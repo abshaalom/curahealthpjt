@@ -1,7 +1,5 @@
 package pagepkg;
 
-import static org.testng.Assert.assertEquals;
-
 import java.awt.AWTException;
 import java.awt.Robot;
 import java.awt.Toolkit;
@@ -119,7 +117,7 @@ public class CuraHealthPageClass extends CuraHealthBaseClass{
 	        js.executeScript("window.scrollBy(0, 1000);");
 		String parentwindow=driver.getWindowHandle();
 		driver.findElement(By.xpath("/html/body/footer/section[1]/div/div[1]/div/div[2]/div/div/span[1]/a/i")).click();//facebook click
-		Thread.sleep(6000);
+		Thread.sleep(9000);
 		//driver.findElement(By.xpath("//*[@id=\"mount_0_0_bs\"]/div/div[1]/div/div[5]/div/div/div[1]/div/div[2]/div/div/div/div[1]/div/i")).click();// facebook login info close
 		
 		driver.switchTo().window(parentwindow);
